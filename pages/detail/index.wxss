@@ -41,7 +41,6 @@
   margin: 0 0 20rpx 20rpx;
   font-size: 14px;
   color: rgb(112, 109, 109);
-
 }
 .button{
   position: fixed;

@@ -14,8 +14,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
-	"appid": "wx0d9da155b2270ac0",
 	"projectname": "goodshop",
+	"appid": "wx0d9da155b2270ac0",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -5,10 +5,9 @@
       <icon type="search" size="16" /> 请输入商品
     </view>
   </view>
-
   <!-- 轮播图 -->
   <view class="carousel">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#fff" circular="true" >
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#fff" circular="true">
       <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <swiper-item>
           <image src="{{item.image_src}}" class="slide-image" mode="aspectFill" />
@@ -22,20 +21,16 @@
   </view>
   <!-- 楼层 -->
   <view class="floors" wx:for="{{floors}}" wx:key="{{index}}">
-    <view class="floor-title" >
-       <image src="{{item.floor_title.image_src}}" mode="aspectFill"></image>
+    <view class="floor-title">
+      <image src="{{item.floor_title.image_src}}" mode="aspectFill"></image>
     </view>
     <view class="floor-content">
       <view class="floor-content-left">
-      <image src="{{item.product_list[0].image_src}}"></image>
-    </view>
-    <view class="floor-content-right">
-    <image 
-    wx:for="{{item.product_list}}" 
-    wx:key="{{index}}" 
-    wx:if="{{index>0}}" 
-    mode="aspectFill" src="{{item.image_src}}"></image>
-    </view>
+        <image src="{{item.product_list[0].image_src}}"></image>
+      </view>
+      <view class="floor-content-right">
+        <image wx:for="{{item.product_list}}" wx:key="{{index}}" wx:if="{{index>0}}" mode="aspectFill" src="{{item.image_src}}"></image>
+      </view>
     </view>
   </view>
-  </view>
+</view>
