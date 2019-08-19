@@ -1,0 +1,25 @@
+<view class="search">
+  <view class="search-input">
+    <icon type="search" size="16"/>{{keyword}}
+  </view>
+</view>
+<view class="goods-title">
+<view class="goods-title-item {{index===current? 'active':''}}"
+wx:for="{{goodstitle}}"
+ wx:key="{{index}}" 
+ bindtap="handlechange" 
+ data-index="{{index}}" >{{item}} </view>
+</view>
+<navigator class="goods-list-item" url="/pages/detail/index?id={{item.goods_id}}"
+ wx:for="{{goods}}" 
+ wx:key="{{index}}">
+  <image class="goods-images" src="{{item.goods_small_logo}}"></image>
+    <view class="goods-list-content">
+      <view class="goods-desc">
+       {{item.goods_name}}
+    </view>
+      <view class="goods-price">
+     ￥ <text>{{ item.goods_price }}</text>
+    </view>
+    </view>
+</navigator> 

@@ -1,0 +1,33 @@
+<!--pages/detail/index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{detail.pics}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.pics_big}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="detail">
+    <view class="detail-price">￥{{detail.goods_price}}</view>
+    <view class="detail-desc">
+      <view class="detail-name">{{detail.goods_name}}</view>
+      <view class="collection">
+        <icon type="search" size="16" />
+        <view>收藏</view>
+      </view>
+    </view>
+
+    <view class="freight">快递：免运费</view>
+  </view>
+  <view class="addcart">
+    <view>促销
+      <text>满300减30</text>
+    </view>
+    <view class="button">
+      <view class="button-left">联系客服</view>
+      <view class="button-left">购物车</view>
+      <view class="button-right">加入购物车</view>
+      <view class="button-right2">立即购买</view>
+    </view>
+  </view>
+</view>

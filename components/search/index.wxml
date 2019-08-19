@@ -1,0 +1,9 @@
+<!--components/search/index.wxml-->
+<view class="search">
+  <view class="search-input">
+    <icon type="search" /> 小米
+  </view>
+</view>
+<view>综合</view>
+<view>销量</view>
+<view>价格</view>
